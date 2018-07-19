@@ -1,0 +1,4 @@
+172.27.0.1 - - [19/Jul/2018:20:45:57 +0000] "GET /api/veip HTTP/1.1" 200 21 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36" "-"
+172.27.0.1 - - [19/Jul/2018:20:46:05 +0000] "GET /api/veip HTTP/1.1" 200 21 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36" "-"
+172.27.0.1 - - [19/Jul/2018:20:46:14 +0000] "GET /api/veipafds HTTP/1.1" 404 1494 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36" "-"
+172.27.0.1 - - [19/Jul/2018:20:46:22 +0000] "GET /api/veip HTTP/1.1" 200 21 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36" "-"
