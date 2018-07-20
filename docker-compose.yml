@@ -1,5 +1,4 @@
 version: '2'
-
 services:
    db:
      image: mysql:5.7
@@ -11,24 +10,14 @@ services:
        MYSQL_DATABASE: veipranges
        MYSQL_USER: laravel
        MYSQL_PASSWORD: laravel
-     networks:
-       - php-network
   
    php:
      depends_on:
        - db
-     image: php:7.2-fpm
-     #image: laravel-php:latest
+     image: php-laravel:latest
      volumes:
        - ./src:/var/www/html
-       #- ./logs/apache2-access.log:/var/log/apache2/access.log
-       #- ./logs/apache2-error.log:/var/log/apache2/error.log
      restart: always
-     #environment:
-       #APACHE_DOCUMENT_ROOT: /var/www/html/public
-       #WORDPRESS_DB_HOST: db:3306
-     networks:
-       - php-network
    
    nginx:
      image: nginx:latest
@@ -41,8 +30,6 @@ services:
        - ./src:/var/www/html
        - ./logs/nginx-access.log:/var/log/nginx/access.log
        - ./logs/nginx-error.log:/var/log/nginx/error.log
-     networks:
-       - php-network
 
    phpmyadmin:
      depends_on:
@@ -51,12 +38,6 @@ services:
      ports:
        - 9091:80
      restart: always
-     networks:
-       - php-network
-
-networks:
- php-network:
-   driver: bridge
 
 volumes:
     db_data:
